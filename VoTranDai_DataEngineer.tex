@@ -77,6 +77,7 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
+      % \href{#5}{\textit{\small#3}} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -142,7 +143,10 @@
 %---------- HEADING ----------
 
 \begin{center}
+    % \textbf{\Huge \scshape Dai Vo - Sphynx Annotation} \\ \vspace{3pt}
     \textbf{\Huge \scshape Dai Vo - Data Engineer} \\ \vspace{3pt}
+    % \textbf{\Huge \scshape Dai Vo - Cloud Engineer Intern} \\ \vspace{3pt}
+    % \textbf{\Huge \scshape Dai Vo - Data Scientist} \\ \vspace{3pt}
     % \textbf{\Huge \scshape Dai Vo - Data Analyst} \\ \vspace{3pt}
     \small
     \faMobile \hspace{.5pt} \href{tel:+84944433047}{+84 944 433 047}
@@ -178,11 +182,59 @@
     implement efficient data pipeline. Committed to leveraging 
     cloud-based technologies, automation, and data modeling expertise 
     to deliver cost-effective solutions and optimize resource utilization. 
-    Then, analyze, and interpret data to provide valuable insights and 
-    support informed decision-making within an organization through data 
-    storytelling.}}
+    % Then, analyze, and interpret data to provide valuable insights and 
+    % support informed decision-making within an organization through data 
+    % storytelling.
+    }}
 
   \resumeSubHeadingListEnd
+
+
+
+%----------- WORK EXPERIENCE -----------
+
+\section{Work Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://mwg.vn}{Mobile World JSC}}
+      {HoChiMinh, Vietnam}
+      {DBA System Fresher}{Oct 2023 \textbf{--} Present}
+        \resumeItemListStart
+            \resumeItem{Collaborated with team members and mentors to find effective solutions to problems.}
+            \resumeItem{Built a change data capture (CDC) pipeline to capture changes from Postgres 
+            using Debezium.}
+            \resumeItem{Pushed messages into Kafka for subsequent processing.}
+            \resumeItem{Processed streaming messages from Kafka using Apache Flink and stored them in TimescaleDB.}
+            \resumeItem{Built a Hazelcast cluster to cache distributed memories for saving precomputed values using Java.}
+            \resumeItem{Developed an API for querying data from Hazelcast using Java Spring Boot.}
+            \resumeItem{Utilized Apache Spark for end-of-day batch processing to ensure data accuracy using Python.}
+            \resumeItem{Visualized insights of data using Superset.}
+        \resumeItemListEnd
+    
+    % \resumeSubheading
+      % {Ankara Metropolitan Municipality}{Ankara, Turkey}
+      % {SCADA Engineering Intern}{Aug 2021 \textbf{--} Sep 2021}
+        % \resumeItemListStart
+            % \resumeItem{Designed GSM/GPRS-based electrical control panels that are connected to local water pump automation systems. 
+            % Pump station panels use digital output data received from the SCADA control center via RF transmission to control valves and pumps. 
+            % Tank station panels are charged from the PV system and refill water tanks by signaling the pump station panel when the float switch is activated.}
+            % \resumeItem{Implemented motor control circuits by reading their PLC ladder diagrams and analyzed the EPLAN project documentation, HMI, and hardware components of an RTU panel.}
+        % \resumeItemListEnd
+
+    % \vspace{15pt}
+  %   \resumeSubheading
+  %     {Meteksan Defense Industry Inc.}{Ankara, Turkey}
+  %     {Analog Design Engineering Intern}{Jul 2021 \textbf{--} Aug 2021}
+  %       \resumeItemListStart
+  %           \resumeItem{Designed numerous analog circuits such as voltage-mode controlled buck converter, phase-shifted full-bridge isolated DC-DC converter, and EMI filters with LTspice. Integrated these circuits and implemented a 320 W power distribution unit to be used in a radar system's power circuit board.}
+  %           \resumeItem{Researched real-world compatible electronic components to be used in such circuits including GaNFETs, high-side gate drivers, and Schottky diodes.}
+  %           \resumeItem{Assembled PCBs of both common and differential mode filters and used VNA Bode 100 to measure the cut-off frequencies.}
+  %       \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+
 
 %----------- EDUCATION -----------
 
@@ -193,8 +245,8 @@
     \resumeEducationHeading
       {University of Information Technology, VNU-HCM
       % \normalfont{(Admission rate: 0.09\%)}
-      }{HCM, VietNam}
-      {B.Sc. in Data Science;   \textbf{GPA: 8.51/10 Good}}{Sep 2019 \textbf{--} Jun 2023}
+      }{HoChiMinh, VietNam}
+      {B.Sc. in Data Science;   \textbf{GPA: 8.51/10 Very Good}}{Sep 2019 \textbf{--} Jun 2023}
       % {Minor Degree in Computer Engineering;   \textbf{GPA: 3.89/4.00}}{Oct 2020 \textbf{--} Jun 2023 (Expected)}
         % \resumeItemListStart
             % \resumeItem{\textbf{Relevant coursework:} Calculus I-II, Matrix Theory, Differential Equations, Materials Science, Electrical Circuits I-II, Digital System Design, Numerical Methods, Probability Theory, Electronics I-II, Signals and Systems, Electromagnetic Field Theory, Energy Conversion, System Dynamics and Control, Communication Engineering}
@@ -215,13 +267,13 @@
 \vspace{2pt}
 \resumeSubHeadingListStart
   \small{\item{
-      \textbf{Programming:}{ Python, C, C++, MySQL, Git.} \\ \vspace{3pt}
+      \textbf{Programming:}{ Python, Java, SQL, Git.} \\ \vspace{3pt}
       
       % \textbf{Technologies:}{ Git} \\ \vspace{3pt}
       
-      \textbf{Data Engineering:}{ Spark, Kafka, Hadoop, Airflow, Docker, AWS.} \\ \vspace{3pt}
+      \textbf{Data Engineering:}{ Spark, Hadoop, Airflow, Kafka, Docker, AWS.} \\ \vspace{3pt}
 
-      \textbf{BI tools:}{ Grafana.} \\ \vspace{3pt}
+      \textbf{BI tools:}{ Superset.} \\ \vspace{3pt}
 
       \textbf{Soft skill:}{ Life-long learning, critical thinking, logical reasoning, 
       research, problem-solving.} \\ \vspace{3pt}
@@ -263,65 +315,27 @@
   % \resumeSubHeadingListEnd
 
 
+% %----------- AWARDS & ACHIEVEMENTS -----------
 
-%----------- WORK EXPERIENCE -----------
-
-% \section{Work Experience}
-  % \vspace{3pt}
-  % \resumeSubHeadingListStart
-    
-  %   \resumeSubheading
-  %     {SESTEK Speech Enabled Software Technologies}{Istanbul, Turkey}
-  %     {Natural Language Processing R\&D Intern}{Jan 2022 \textbf{--} Feb 2022}
-  %       \resumeItemListStart
-  %           \resumeItem{Implemented common NLP tasks using transformers such as named-entity recognition (NER), part-of-speech (POS) tagging, sentiment analysis, text classification, and extractive/generative question answering.}
-  %           \resumeItem{Built a generative question answering system via Dense Passage Retrieval (DPR) and Retrieval-Augmented Generation (RAG) using the Haystack framework with Python.}
-  %           \resumeItem{Worked on a custom Turkish open-domain question answering system by fine-tuning a BERT base model transformer. Evaluated the exact match and F1 scores using different Turkish data sets and compared the evaluation results.}
-  %       \resumeItemListEnd
-    
-    % \resumeSubheading
-      % {Ankara Metropolitan Municipality}{Ankara, Turkey}
-      % {SCADA Engineering Intern}{Aug 2021 \textbf{--} Sep 2021}
-        % \resumeItemListStart
-            % \resumeItem{Designed GSM/GPRS-based electrical control panels that are connected to local water pump automation systems. Pump station panels use digital output data received from the SCADA control center via RF transmission to control valves and pumps. Tank station panels are charged from the PV system and refill water tanks by signaling the pump station panel when the float switch is activated.}
-            % \resumeItem{Implemented motor control circuits by reading their PLC ladder diagrams and analyzed the EPLAN project documentation, HMI, and hardware components of an RTU panel.}
-        % \resumeItemListEnd
-
-    % \vspace{15pt}
-  %   \resumeSubheading
-  %     {Meteksan Defense Industry Inc.}{Ankara, Turkey}
-  %     {Analog Design Engineering Intern}{Jul 2021 \textbf{--} Aug 2021}
-  %       \resumeItemListStart
-  %           \resumeItem{Designed numerous analog circuits such as voltage-mode controlled buck converter, phase-shifted full-bridge isolated DC-DC converter, and EMI filters with LTspice. Integrated these circuits and implemented a 320 W power distribution unit to be used in a radar system's power circuit board.}
-  %           \resumeItem{Researched real-world compatible electronic components to be used in such circuits including GaNFETs, high-side gate drivers, and Schottky diodes.}
-  %           \resumeItem{Assembled PCBs of both common and differential mode filters and used VNA Bode 100 to measure the cut-off frequencies.}
-  %       \resumeItemListEnd
-    
-  % \resumeSubHeadingListEnd
-
-
-
-%----------- AWARDS & ACHIEVEMENTS -----------
-
-\section{Awards \& Achievements}
-  \vspace{2pt}
-  \resumeSubHeadingListStart
-    \small{\item{
-        \textbf{Semester Scholarship:}{ Ranked $3^{rd}$ in the class with the highest overall score in the $1^{st}$ semester.} \\ \vspace{3pt}
+% \section{Awards \& Achievements}
+%   \vspace{2pt}
+%   \resumeSubHeadingListStart
+%     \small{\item{
+%         \textbf{Semester Scholarship:}{ Ranked $3^{rd}$ in the class with the highest overall score in the $1^{st}$ semester.} \\ \vspace{3pt}
         
-        % \textbf{KYK Outstanding Success Scholarship:}{ Awarded to undergraduate students who have been ranked in the top 100 on National University Admission Exam by Higher Education Credit and Hostels Institution (KYK).} \\ \vspace{3pt}
+%         % \textbf{KYK Outstanding Success Scholarship:}{ Awarded to undergraduate students who have been ranked in the top 100 on National University Admission Exam by Higher Education Credit and Hostels Institution (KYK).} \\ \vspace{3pt}
         
-        % \textbf{Boğaziçi University Success Scholarship:}{ Awarded to undergraduate students who have been ranked in the top 100 on National University Admission Exam by Boğaziçi University.} \\ \vspace{3pt}
+%         % \textbf{Boğaziçi University Success Scholarship:}{ Awarded to undergraduate students who have been ranked in the top 100 on National University Admission Exam by Boğaziçi University.} \\ \vspace{3pt}
         
-        % \textbf{TÜBİTAK 2247-C Intern Researcher Scholarship:}{ Awarded to undergraduate students who take part in research projects carried out by the Scientific and Technological Research Council of Turkey (TÜBİTAK).} \\ \vspace{3pt}
+%         % \textbf{TÜBİTAK 2247-C Intern Researcher Scholarship:}{ Awarded to undergraduate students who take part in research projects carried out by the Scientific and Technological Research Council of Turkey (TÜBİTAK).} \\ \vspace{3pt}
         
-        % \textbf{Duolingo English Test (DET):}{ Overall Score: 135/160} \\ \vspace{3pt}
+%         % \textbf{Duolingo English Test (DET):}{ Overall Score: 135/160} \\ \vspace{3pt}
         
-        % \textbf{Boğaziçi University English Proficiency Test (BUEPT):}{ Achieved the highest grade A on the BUEPT grading scheme with a total score in the range of 85-100.} \\ \vspace{3pt}
+%         % \textbf{Boğaziçi University English Proficiency Test (BUEPT):}{ Achieved the highest grade A on the BUEPT grading scheme with a total score in the range of 85-100.} \\ \vspace{3pt}
         
-        % \textbf{Kocaeli Science High School Salutatorian Award:}{ Graduated as the second-highest ranked student in my class.}
-    }}
-  \resumeSubHeadingListEnd
+%         % \textbf{Kocaeli Science High School Salutatorian Award:}{ Graduated as the second-highest ranked student in my class.}
+%     }}
+%   \resumeSubHeadingListEnd
 
 
 %----------- CERTIFICATES -----------
@@ -330,12 +344,19 @@
   \resumeSubHeadingListStart
     
     \resumeOrganizationHeading
-      {Machine Learning Specialization}{Feb 2022}
-      % {Business Skills, Data and Digital Skills, Project Management and Personal Productivity}
-    
-    \resumeOrganizationHeading
-      {IBM Data Science Specialization}{Aug 2022}
-      % {Business Skills, Data and Digital Skills, Project Management and Personal Productivity}
+      {\href{https://drive.google.com/file/d/1byFfX2mUtbEEEcJt48gu4S_juwKK0t5B/view?usp=sharing}{MWG IT Fresher}}{MWG}
+
+      \resumeOrganizationHeading
+      {\href{http://tinyurl.com/yhaa673m}{Accenture North America Data Analytics and Visualization Virtual Experience}}{Forage}
+
+      \resumeOrganizationHeading
+      {\href{http://tinyurl.com/dbd8tdnj}{Lyft Back-End Engineering Virtual Experience Program}}{Forage}
+
+      \resumeOrganizationHeading
+      {\href{https://www.coursera.org/account/accomplishments/specialization/certificate/44U9NEJHAVHD}{IBM Data Science Specialization}}{Coursera}
+      
+      \resumeOrganizationHeading
+      {\href{https://www.coursera.org/account/accomplishments/specialization/certificate/4ECUSVEVGYJ3}{Machine Learning Specialization}}{Coursera}
     
   \resumeSubHeadingListEnd
 
@@ -346,27 +367,27 @@
     \vspace{3pt}
     \resumeSubHeadingListStart
 
-      \resumeProjectHeading
-      {\textbf{Covid-19 End-to-End Data Analysis} }
-      % $|$ 
-      % \emph{\href{_}{\color{blue}GitHub}}}
-      {}
-      {Build End-to-End data pipeline from data source to dashboard to display total cases, 
-      deaths and total cases per region.}
-        \resumeItemListStart
-          \resumeItem{Automate pushing data from data sources into data lake.}
-          \resumeItem{Build ETL pipeline to handle data.}
-          \resumeItem{Build a data warehouse to save processed data.}
-          \resumeItem{Build a real-time dashboard to display some insight of data.}
-          % \resumeItem{Added recursive fractal generation functions to 
-          % model popular fractals including Mandelbrot set, Julia set, 
-          % Koch curve, Barnsley fern, and Sierpinski triangle in PPM format.}
-          \resumeItem{\textbf{Skills:} Python, Airflow, 
-          AWS (S3, Crawlers, Glue, Athena, Redshift, QuickSight).}
-        \resumeItemListEnd
+      % \resumeProjectHeading
+      % {\textbf{Covid-19 End-to-End Data Analysis} }
+      % % $|$ 
+      % % \emph{\href{_}{\color{blue}GitHub}}}
+      % {}
+      % {Build End-to-End data pipeline from data source to dashboard to display total cases, 
+      % deaths and total cases per region.}
+      %   \resumeItemListStart
+      %     \resumeItem{Automate pushing data from data sources into data lake.}
+      %     \resumeItem{Build ETL pipeline to handle data.}
+      %     \resumeItem{Build a data warehouse to save processed data.}
+      %     \resumeItem{Build a real-time dashboard to display some insight of data.}
+      %     % \resumeItem{Added recursive fractal generation functions to 
+      %     % model popular fractals including Mandelbrot set, Julia set, 
+      %     % Koch curve, Barnsley fern, and Sierpinski triangle in PPM format.}
+      %     \resumeItem{\textbf{Skills:} Python, Airflow, 
+      %     AWS (S3, Crawlers, Glue, Athena, Redshift, QuickSight).}
+      %   \resumeItemListEnd
 
       \resumeProjectHeading
-        {\textbf{Vehicle Speed Estimation on the Vietnam’s Street Real-time} }
+        {\href{https://www.uit.edu.vn/chuc-mung-3-sinh-vien-nganh-khoa-hoc-du-lieu-co-bai-bao-khoa-hoc-duoc-chap-nhan-dang-tai-hoi-nghi-khoa-hoc-vnict-2023}{\textbf{Vehicle Speed Estimation on the Vietnam’s Street Real-time}} }
         % $|$ 
         % \emph{\href{https://github.com/DaiVo20/Vehicle-Speed-Estimation}{\color{blue}GitHub}}}
         {}
@@ -375,15 +396,11 @@
             \resumeItem{Train models on multiple GPU.}
             \resumeItem{Use Kafka to send the frames of video from data source into model.}
             \resumeItem{Write speed estimation of the vehicles based on the distance of the crossing-lines.}
-            % \resumeItem{Added recursive fractal generation functions to 
-            % model popular fractals including Mandelbrot set, Julia set, 
-            % Koch curve, Barnsley fern, and Sierpinski triangle in PPM format.}
-            \resumeItem{\textbf{Skills:} Python, Kafka, OpenCV, Flask, 
-            Models (Yolov7, DeepSORT).}
+            \resumeItem{\textbf{Skills:} Python, Kafka, OpenCV, Flask, Models (Yolov7, DeepSORT).}
           \resumeItemListEnd
 
       \resumeProjectHeading
-      {\textbf{Hate speech detection on Vietnamese Social Media Text on Facebook Real-time} }
+      {\href{https://www.researchgate.net/publication/375781867_A_Scalable_Hate_Speech_Detection_System_for_Vietnamese_Social_Media_using_Real-time_Big_Data_Processing_and_Distributed_Deep_Learning}{\textbf{Hate speech detection on Vietnamese Social Media Text on Facebook Real-time}} }
       % $|$ 
       % \emph{\href{https://github.com/DaiVo20/Detect-hate-speech-comments-on-Facebook}{\color{blue}GitHub}}}
       {}
@@ -391,9 +408,6 @@
       Spark Structured Streaming to process them. Deep learning models trained using distributed methods will predict sentiment of comments. 
       A real-time web app dashboard will display aggregated predictions.}
         \resumeItemListStart
-          % \resumeItem{A C project which implements a variety of image processing operations 
-          % that manipulate the size, filter, brightness, contrast, saturation, 
-          % and other properties of PPM images from scratch.}
           \resumeItem{Use BigDL to improve performance by combining the power of distributed clusters when training models.}
           \resumeItem{Crawl data from Facebook by Selenium.}
           \resumeItem{Use Kafka to push data into Spark.}
@@ -418,23 +432,23 @@
       %     \resumeItem{\textbf{Skills:} Python, PyTorch, Model (Efficient-FedRec), Tkinter}
       %   \resumeItemListEnd
 
-      \resumeProjectHeading
-      {\textbf{Real Estate analysis} }
-      % $|$ 
-      % \emph{\href{https://github.com/DaiVo20/Real-Estate-Data-Analysis}{\color{blue}GitHub}}}
-      {}
-      {Analysis price of real estate in Ho Chi Minh, Binh Duong, and Dong Nai from the posts on Chotot.com, Alonhadat.com.vn.}
-        \resumeItemListStart
-          \resumeItem{Crawl data from Chotot and Alonhadat by Scrapy.}
-          \resumeItem{Preprocess data with handling missing, outlier values.}
-          \resumeItem{Execute Exploratory Data Analysis and Feature Extraction to take insights from data.}
-          \resumeItem{Build machine learning models to check the hypothesis.}
-          \resumeItem{Create web-app to visualize prediction from inputs}
-          % \resumeItem{Added recursive fractal generation functions to 
-          % model popular fractals including Mandelbrot set, Julia set, 
-          % Koch curve, Barnsley fern, and Sierpinski triangle in PPM format.}
-          \resumeItem{\textbf{Skills:} Python, Scrapy, BeautifulSoup, Flask, Models (Linear/Polynomial Regression, Random Forest, KNN).}
-        \resumeItemListEnd
+      % \resumeProjectHeading
+      % {\textbf{Real Estate analysis} }
+      % % $|$ 
+      % % \emph{\href{https://github.com/DaiVo20/Real-Estate-Data-Analysis}{\color{blue}GitHub}}}
+      % {}
+      % {Analysis price of real estate in Ho Chi Minh, Binh Duong, and Dong Nai from the posts on Chotot.com, Alonhadat.com.vn.}
+      %   \resumeItemListStart
+      %     \resumeItem{Crawl data from Chotot and Alonhadat by Scrapy.}
+      %     \resumeItem{Preprocess data with handling missing, outlier values.}
+      %     \resumeItem{Execute Exploratory Data Analysis and Feature Extraction to take insights from data.}
+      %     \resumeItem{Build machine learning models to check the hypothesis.}
+      %     \resumeItem{Create web-app to visualize prediction from inputs}
+      %     % \resumeItem{Added recursive fractal generation functions to 
+      %     % model popular fractals including Mandelbrot set, Julia set, 
+      %     % Koch curve, Barnsley fern, and Sierpinski triangle in PPM format.}
+      %     \resumeItem{\textbf{Skills:} Python, Scrapy, BeautifulSoup, Flask, Models (Linear/Polynomial Regression, Random Forest, KNN).}
+      %   \resumeItemListEnd
 
 
       % \resumeProjectHeading
